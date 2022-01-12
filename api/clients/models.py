@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Client(models.Model):
+    id = models.AutoField(primary_key=True, blank=True)
     date_of_birth = models.DateField(
         auto_now_add=False, null=True, blank=True)
     diagnoses = models.CharField(max_length=100, null=True, blank=True)
