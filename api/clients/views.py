@@ -4,8 +4,8 @@ from rest_framework import serializers
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from api.clients.models import Client
-from api.clients.serializers import ClientSerializer
+from .models import Client
+from .serializers import ClientSerializer
 
 
 @api_view(['GET'])
